@@ -31,13 +31,52 @@ main{
     z-index: 10;
 }
 
-a{
-    text-decoration: underline;
-    color: black;
+.navButtons{
+    display: block;
+    position: sticky;
+    align-items: space-between;
 }
 
-.navButtons{
-    align-items: space-between;
+.navButtons > a:before{
+    text-decoration:none;
+}
+
+ .navButtons a {             /* animated underlines*/
+    color: black;
+    text-transform: lowercase;
+    text-decoration: none;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+}
+.navButtons a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 10px;
+    content: "";
+    display: block;
+    height: 1px;
+    right: 50%;
+    position: absolute;
+    background: black;
+    transition: 0.7s ease 0s, 0.3s ease 0s;
+    width: 0;
+}
+.navButtons a:hover:after { 
+    width: 100%; 
+    right: 0; 
+}
+
+.navButtons li{
+    list-style: none;
+    display: inline;
+    margin: auto;
+    padding: 0;
+}
+
+.navButtons li:hover{
+    text-decoration:underline;
+
 }
 
 h1{
@@ -52,20 +91,48 @@ h2{
     margin-right:50px;
 }
 
-h3, h4{
+h3{
     position: relative;
     font-family: 'Cutive Mono', monospace;
     font-weight: 1000;
-    text-decoration: underline;
     margin-top: 50px;
+    padding:10px;
+}
+
+h4{
+    position: relative;
+    font-family: 'Cutive Mono', monospace;
+    font-weight: 1000;
+    margin: auto;
+    padding:10px;
 }
 
 .project-link, .screenshot{
     position:relative;
+    margin-bottom:5px;
+}
+
+span a{
+    margin:5px;
+    padding-bottom:5px;
 }
 
 .screenshot{
-    max-width: 50%;
+    max-width:100%;
+}
+
+.projArea{
+    display: border-box;
+    position:relative;
+    width:55%;
+    background:#d6d4d4;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:5px;
+    margin-bottom:10px;
+    padding-bottom:8px;
+    border: 1px solid #747474;
+    border-radius: 3px;
 }
 
 p{
@@ -75,6 +142,10 @@ p{
     text-align: left;
     width: 70%;
     font-weight: 400;
+}
+
+.projBlerb{
+    text-align:center;
 }
 
 .first-line{
