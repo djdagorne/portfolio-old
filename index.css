@@ -41,7 +41,7 @@ main{
     text-decoration:none;
 }
 
- .navButtons a {             /* animated underlines*/
+.navButtons a {             /* animated underlines*/
     color: black;
     text-transform: lowercase;
     text-decoration: none;
@@ -162,6 +162,7 @@ footer{
 }
 
 .contact a{
+    color: black;
     text-decoration: underline;
     font-weight:600;
 }
