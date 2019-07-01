@@ -1,0 +1,107 @@
+*{
+    box-sizing:border-box;
+    font-family: 'Cutive Mono', monospace;
+    /* font-family: 'Open Sans', sans-serif; */
+}
+
+body{    
+    background-image: url("images/background-texture.jpg");
+    background-repeat: repeat;
+    background-position: top left;
+    text-align: center;
+}
+
+header{
+    margin-bottom: 30px;
+}
+
+main{
+    margin-top:250px;
+}
+
+.navBar{
+    position: fixed;
+    background-image: url("images/paper-edges-hor-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height:350px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+a{
+    text-decoration: underline;
+    color: black;
+}
+
+.navButtons{
+    align-items: space-between;
+}
+
+h1{
+    font-size:36;
+    margin-bottom:5px;
+}
+
+h2{
+    display: inline;
+    font-size:20;
+    margin-left:50px;
+    margin-right:50px;
+}
+
+h3, h4{
+    position: relative;
+    font-family: 'Cutive Mono', monospace;
+    font-weight: 1000;
+    text-decoration: underline;
+    margin-top: 50px;
+}
+
+.project-link, .screenshot{
+    position:relative;
+}
+
+.screenshot{
+    max-width: 50%;
+}
+
+p{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 70%;
+    font-weight: 400;
+}
+
+.first-line{
+    text-align:center;
+}
+
+footer{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact{
+    display:block;
+}
+
+.contact a{
+    text-decoration: underline;
+    font-weight:600;
+}
+
+/* @media all and (min-width: 800px) {
+    .navBar{
+        position: fixed;
+        background-image: url("images/paper-edges-vert-1.png");
+        background-repeat: no-repeat;
+        background-position: left;
+        height:100%;
+        z-index: 10;
+    }
+} */
