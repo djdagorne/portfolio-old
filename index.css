@@ -1,14 +1,10 @@
 *{
     box-sizing:border-box;
-    font-family: 'Cutive Mono', monospace;
-    /* font-family: 'Open Sans', sans-serif; */
 }
 
 body{    
     position:relative;
-    background-image: url("images/background-texture.jpg");
-    background-repeat: repeat;
-    background-position: top left;
+    
     text-align: center;
     margin:0;
     padding:0;
@@ -29,15 +25,13 @@ main{
 
 .navBar{
     position: fixed;
-    background-image: url("images/paper-edges-hor-2.png");
     background-position: center;
-    background-repeat: no-repeat;
     min-height:320px;
     width:100%;
     top: 0;
-    z-index: 10;
-    padding:0;
+    padding:50px;
     margin:0;
+    z-index: 10;
 }
 
 body::after {
@@ -54,21 +48,16 @@ footer {
 }
 
 .navButtons{
+    background-color: grey;
     display: block;
-    position: sticky;
     padding-inline-start: 0px;
 }
 
-.navButtons > li:before{
-    cursor:pointer;
-    text-decoration:none;
-}
 
 .navButtons li {             /* animated underline for nav*/
     cursor: pointer;
     color: black;
     text-decoration: none;
-    
     display: inline-block;
     padding: 1px 0px;
     margin:0px 20px;
@@ -77,22 +66,7 @@ footer {
     list-style: none;
     font-size:18;
 }
-.navButtons li:after {    
-    background: none repeat scroll 0 0 transparent;
-    
-    content: "";
-    display: block;
-    height: 1px;
-    right: 50%;
-    position: absolute;
-    background: black;
-    transition: 0.7s ease 0s, 0.3s ease 0s;
-    width: 0;
-}
-.navButtons li:hover:after { 
-    width: 100%; 
-    right: 0; 
-}
+
 
 h1{
     font-size:40;
@@ -122,6 +96,7 @@ h4{
 }
 
 p{
+    background-color: slategray;
     position: relative;
     font-family: 'Open Sans', sans-serif;
     margin-left: auto;
@@ -150,20 +125,21 @@ span a{
 
 .screenshot{
     max-width:100%;
+    width:1100px;
+    min-height:200px;
 }
 
 .projArea{
     display: border-box;
     position:relative;
-    width:75%;
+    width:100%;
     background:#d6d4d4;
     margin-left:auto;
     margin-right:auto;
     margin-top:5px;
-    margin-bottom:30px;
+    margin-bottom:55px;
     padding-bottom:8px;
     border: 1px solid #b9aeae;
-    border-radius: 3px;
 }
 
 
@@ -185,13 +161,22 @@ footer{
     color: black;
 }
 
-/* @media all and (min-width: 800px) {
-    .navBar{
-        position: fixed;
-        background-image: url("images/paper-edges-vert-1.png");
-        background-repeat: no-repeat;
-        background-position: left;
-        height:100%;
-        z-index: 10;
-    }
-} */
+@media all and (min-width: 700px) {
+html{
+    background-color:ivory;
+}
+.projArea{
+    display: border-box;
+    position:relative;
+    width:75%;
+    background:#d6d4d4;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:5px;
+    margin-bottom:100px;
+    padding-bottom:8px;
+    border: 1px solid #b9aeae;
+    border-radius: 3px;
+}
+
+}

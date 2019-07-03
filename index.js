@@ -5,16 +5,58 @@ function stickyNav(){
 function renderProjects(){
     $('main').html(`
     <h2>Projects </h2>
-      <div class ="projArea">
-        <h3>Nintendo Trivia App</h3>
-        <img src="images/quiz-app-crop1.png" alt="Screenshot of Nintendo Quiz" class="screenshot">
+    <div class ="projArea">
+    <h3>filler text etc</h3>
+    <div class="screenshot">screenshot goes here</div>
+    
+    <p class="projBlerb">
+    filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler 
+    </p>
+    <span class="project-link"><a href="#">Live</a></span>
+    <span class="project-link"><a href="#">Repo</a></span>
+  </div>
+  <div class ="projArea">
+        <h3>filler text etc</h3>
+        <div class="screenshot">screenshot goes here</div>
+        
         <p class="projBlerb">
-            A 10 question quiz web application, using jQuery, CSS, HTML.
+        filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler 
         </p>
-        <span class="project-link"><a href="https://djdagorne.github.io/quiz-app/">Live</a></span>
-        <span class="project-link"><a href="https://github.com/djdagorne/quiz-app">Repo</a></span>
+        <span class="project-link"><a href="#">Live</a></span>
+        <span class="project-link"><a href="#">Repo</a></span>
       </div>
-      `);
+      <div class ="projArea">
+        <h3>filler text etc</h3>
+        <div class="screenshot">screenshot goes here</div>
+        
+        <p class="projBlerb">
+        filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler 
+        </p>
+        <span class="project-link"><a href="#">Live</a></span>
+        <span class="project-link"><a href="#">Repo</a></span>
+      </div>
+      <div class ="projArea">
+        <h3>filler text etc</h3>
+        <div class="screenshot">screenshot goes here</div>
+        
+        <p class="projBlerb">
+        filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler 
+        </p>
+        <span class="project-link"><a href="#">Live</a></span>
+        <span class="project-link"><a href="#">Repo</a></span>
+      </div>
+      <div class ="projArea">
+        <h3>filler text etc</h3>
+        <div class="screenshot">screenshot goes here</div>
+        
+        <p class="projBlerb">
+        filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler 
+        </p>
+        <span class="project-link"><a href="#">Live</a></span>
+        <span class="project-link"><a href="#">Repo</a></span>
+      </div>
+      
+      `);//<img src="images/quiz-app-crop1.png" alt="Screenshot of Nintendo Quiz" class="screenshot">
       
 };
 
