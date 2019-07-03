@@ -4,9 +4,9 @@ function stickyNav(){
 
 function renderProjects(){
     $('main').html(`
-    <h3>Projects </h3>
+    <h2>Projects </h2>
       <div class ="projArea">
-        <h4>Nintendo Trivia App</h4>
+        <h3>Nintendo Trivia App</h3>
         <img src="images/quiz-app-crop1.png" alt="Screenshot of Nintendo Quiz" class="screenshot">
         <p class="projBlerb">
             A 10 question quiz web application, using jQuery, CSS, HTML.
@@ -20,7 +20,7 @@ function renderProjects(){
 
 function renderAbout(){
     $('main').html(`
-    <h3>Bio </h3>
+    <h2>Bio </h2>
       <p>
           Ever since I was a kid in middle school, I've been tinkering with everything computer related I could get my hands on.
           Building my own PC's, modding games, 2D & 3D digital art, and of course programming to tie it all together. 
@@ -33,7 +33,7 @@ function renderAbout(){
 
 function renderHome(){
     $('main').html(`
-    <h3>Well hello!</h3>
+    <h2>Well hello!</h2>
     <p>
         I am Dexter Dagorne. I like DotA, low quality memes, 
         and making computers do my bidding. Feel free to check out 

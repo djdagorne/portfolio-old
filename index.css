@@ -5,10 +5,18 @@
 }
 
 body{    
+    position:relative;
     background-image: url("images/background-texture.jpg");
     background-repeat: repeat;
     background-position: top left;
     text-align: center;
+    margin:0;
+    padding:0;
+/* 
+    margin-top: 0; 
+    padding-top: 0; 
+    margin-bottom: 0; 
+    padding-bottom: 0; */
 }
 
 header{
@@ -24,33 +32,52 @@ main{
     background-image: url("images/paper-edges-hor-2.png");
     background-position: center;
     background-repeat: no-repeat;
-    min-height:350px;
+    min-height:320px;
+    width:100%;
     top: 0;
-    left: 0;
-    right: 0;
     z-index: 10;
+    padding:0;
+    margin:0;
+}
+
+body::after {
+    content: '';
+    display: block;
+    height: 100px; /* Set same as footer's height */
+}
+  
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
 }
 
 .navButtons{
     display: block;
     position: sticky;
-    align-items: space-between;
+    padding-inline-start: 0px;
 }
 
-.navButtons > a:before{
+.navButtons > li:before{
+    cursor:pointer;
     text-decoration:none;
 }
 
-.navButtons a {             /* animated underlines*/
+.navButtons li {             /* animated underline for nav*/
+    cursor: pointer;
     color: black;
-    text-transform: lowercase;
     text-decoration: none;
     
     display: inline-block;
-    padding: 1px 20px;
+    padding: 1px 0px;
+    margin:0px 20px;
     position: relative;
+
+    list-style: none;
+    font-size:18;
 }
-.navButtons a:after {    
+.navButtons li:after {    
     background: none repeat scroll 0 0 transparent;
     
     content: "";
@@ -62,51 +89,53 @@ main{
     transition: 0.7s ease 0s, 0.3s ease 0s;
     width: 0;
 }
-.navButtons a:hover:after { 
+.navButtons li:hover:after { 
     width: 100%; 
     right: 0; 
 }
 
-.navButtons li{
-    list-style: none;
-    display: inline;
-    margin: auto;
-    padding: 0;
-}
-
-.navButtons li:hover{
-    text-decoration:underline;
-
-}
-
 h1{
-    font-size:42;
+    font-size:40;
+    margin-top:15px;
     margin-bottom:5px;
 }
 
 h2{
-    display: inline;
-    font-size:26;
-    margin-left:50px;
-    margin-right:50px;
+    font-size:32;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 h3{
     position: relative;
-    font-family: 'Cutive Mono', monospace;
-    font-size:26;
-    font-weight: 1000;
-    margin-top: 50px;
+    font-size:23;
     padding:10px;
+    margin:0;
 }
 
 h4{
     position: relative;
-    font-family: 'Cutive Mono', monospace;
-    font-size:28;
-    font-weight: 1000;
+    font-size:22;
+    margin-top: 50px;
     margin: auto;
     padding:10px;
+}
+
+p{
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 77%;
+    font-size:18;
+    font-weight:300;
+}
+
+.projBlerb{
+    text-align:center;
+    margin:auto;
+    width:80%;
 }
 
 .project-link, .screenshot{
@@ -126,48 +155,34 @@ span a{
 .projArea{
     display: border-box;
     position:relative;
-    width:55%;
+    width:75%;
     background:#d6d4d4;
     margin-left:auto;
     margin-right:auto;
     margin-top:5px;
-    margin-bottom:10px;
+    margin-bottom:30px;
     padding-bottom:8px;
     border: 1px solid #b9aeae;
     border-radius: 3px;
 }
 
-p{
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    width: 60%;
-    font-weight: 500;
-    font-size:20;
-}
-
-.projBlerb{
-    text-align:center;
-}
 
 .first-line{
     text-align:center;
 }
 
 footer{
+    font-size:28;
     margin-left: auto;
     margin-right: auto;
 }
 
 .contact{
-    display:block;
+    display:inline-block;
 }
 
-.contact a{
+.contact a, a:visited, a:hover{
     color: black;
-    text-decoration: underline;
-    font-weight:1000;
 }
 
 /* @media all and (min-width: 800px) {
