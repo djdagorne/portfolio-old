@@ -43,7 +43,7 @@ function renderHome(){
 };
 
 function handlePage(){
-    renderHome()
+    renderHome();
     $(".navButtons").on('click', '.projects-button', function(event){
         renderProjects();
     });
