@@ -1,18 +1,17 @@
 *{
     box-sizing:border-box;
+    font-family: 'Cutive Mono', monospace;
+    /* font-family: 'Open Sans', sans-serif; */
 }
 
 body{    
     position:relative;
-    
+    background-image: url("images/background-texture.jpg");
+    background-repeat: repeat;
+    background-position: top left;
     text-align: center;
     margin:0;
     padding:0;
-/* 
-    margin-top: 0; 
-    padding-top: 0; 
-    margin-bottom: 0; 
-    padding-bottom: 0; */
 }
 
 header{
@@ -25,13 +24,15 @@ main{
 
 .navBar{
     position: fixed;
+    background-image: url("images/paper-edges-hor-2.png");
     background-position: center;
+    background-repeat: no-repeat;
     min-height:320px;
     width:100%;
     top: 0;
-    padding-top:50px;
-    margin:0;
     z-index: 10;
+    padding:0;
+    margin:0;
 }
 
 body::after {
@@ -48,16 +49,21 @@ footer {
 }
 
 .navButtons{
-    background-color: grey;
     display: block;
+    position: sticky;
     padding-inline-start: 0px;
 }
 
+.navButtons > li:before{
+    cursor:pointer;
+    text-decoration:none;
+}
 
 .navButtons li {             /* animated underline for nav*/
     cursor: pointer;
     color: black;
     text-decoration: none;
+    
     display: inline-block;
     padding: 1px 0px;
     margin:0px 20px;
@@ -66,10 +72,27 @@ footer {
     list-style: none;
     font-size:18;
 }
+.navButtons li:after{ 
+    content: "";
+    display: block;
+    height: 1px;
+    right: 50%;
+    position: absolute;
+    background: black;
+    transition: 0.7s ease 0s, 0.3s ease 0s;
+    width: 0;
+}
+.navButtons li:hover:after { 
+    width: 100%; 
+    right: 0; 
+}
 
+.js-pressed{    
+    font-weight:1000;
+}
 
 h1{
-    font-size:40;
+    font-size:30;
     margin-top:15px;
     margin-bottom:5px;
 }
@@ -96,7 +119,6 @@ h4{
 }
 
 p{
-    background-color: slategray;
     position: relative;
     font-family: 'Open Sans', sans-serif;
     margin-left: auto;
@@ -125,8 +147,6 @@ span a{
 
 .screenshot{
     max-width:100%;
-    width:1100px;
-    min-height:200px;
 }
 
 .projArea{
@@ -134,12 +154,11 @@ span a{
     position:relative;
     width:100%;
     background:#d6d4d4;
-    margin-left:auto;
-    margin-right:auto;
     margin-top:5px;
-    margin-bottom:55px;
+    margin-bottom:30px;
     padding-bottom:8px;
-    border: 1px solid #b9aeae;
+    border-top: 1px solid #b9aeae;
+    border-bottom: 1px solid #b9aeae;
 }
 
 
@@ -162,21 +181,27 @@ footer{
 }
 
 @media all and (min-width: 700px) {
-html{
-    background-color:ivory;
-}
-.projArea{
-    display: border-box;
-    position:relative;
-    width:75%;
-    background:#d6d4d4;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:5px;
-    margin-bottom:100px;
-    padding-bottom:8px;
-    border: 1px solid #b9aeae;
-    border-radius: 3px;
-}
-
-}
+    h1{
+        font-size:40;
+    }
+    .projArea{
+        display: border-box;
+        position:relative;
+        width:75%;
+        background:#d6d4d4;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:5px;
+        margin-bottom:100px;
+        padding-bottom:8px;
+        border: 1px solid #b9aeae;
+        border-radius: 3px;
+    }
+    p{
+        text-align: justify;
+    }
+    .screenshot{
+        width:100%;
+    }
+    
+    }
