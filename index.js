@@ -14,6 +14,8 @@ function renderProjects(){
     <h2>Projects </h2>
       <div class ="projArea">
         <h3>Nintendo Trivia App</h3>
+        <i class="fab fa-html5 "></i>
+        <i class="fab fa-js "></i>
         <img src="images/quiz-app-crop1.png" alt="Screenshot of Nintendo Quiz" class="screenshot">
         <p class="projBlerb">
             A 10 question quiz web application, using jQuery, CSS, HTML.
@@ -32,8 +34,8 @@ function renderAbout(){
           Ever since I was a kid in middle school, I've been tinkering with everything computer related I could get my hands on.
           Building my own PC's, modding games, 2D & 3D digital art, and of course programming to tie it all together. 
           The incredible versatile power of modern computers has always captivated and inspired me. A good
-          chunk of time later, here I am, looking to make it in web development, where I can explore ideas and technologies,
-          and see where all this might end up leading me.
+          chunk of time later, here I am, looking to make it in web development, where I can explore ideas and technologies with
+          as many other people as I can.
       </p>
       `);
 };
@@ -50,6 +52,7 @@ function renderHome(){
 };
 
 function handlePage(){
+    
     renderHome();
     navBoldText();
     $(".navButtons").on('click', '.projects-button', function(event){
