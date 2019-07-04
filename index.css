@@ -12,11 +12,6 @@ body{
     text-align: center;
     margin:0;
     padding:0;
-/* 
-    margin-top: 0; 
-    padding-top: 0; 
-    margin-bottom: 0; 
-    padding-bottom: 0; */
 }
 
 header{
@@ -77,9 +72,7 @@ footer {
     list-style: none;
     font-size:18;
 }
-.navButtons li:after {    
-    background: none repeat scroll 0 0 transparent;
-    
+.navButtons li:after{ 
     content: "";
     display: block;
     height: 1px;
@@ -94,8 +87,12 @@ footer {
     right: 0; 
 }
 
+.js-pressed{    
+    font-weight:1000;
+}
+
 h1{
-    font-size:40;
+    font-size:30;
     margin-top:15px;
     margin-bottom:5px;
 }
@@ -155,15 +152,13 @@ span a{
 .projArea{
     display: border-box;
     position:relative;
-    width:75%;
+    width:100%;
     background:#d6d4d4;
-    margin-left:auto;
-    margin-right:auto;
     margin-top:5px;
     margin-bottom:30px;
     padding-bottom:8px;
-    border: 1px solid #b9aeae;
-    border-radius: 3px;
+    border-top: 1px solid #b9aeae;
+    border-bottom: 1px solid #b9aeae;
 }
 
 
@@ -185,13 +180,25 @@ footer{
     color: black;
 }
 
-/* @media all and (min-width: 800px) {
-    .navBar{
-        position: fixed;
-        background-image: url("images/paper-edges-vert-1.png");
-        background-repeat: no-repeat;
-        background-position: left;
-        height:100%;
-        z-index: 10;
+@media all and (min-width: 700px) {
+    h1{
+        font-size:40;
     }
-} */
+    .projArea{
+        display: border-box;
+        position:relative;
+        width:75%;
+        background:#d6d4d4;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:5px;
+        margin-bottom:100px;
+        padding-bottom:8px;
+        border: 1px solid #b9aeae;
+        border-radius: 3px;
+    }
+    .screenshot{
+        width:100%;
+    }
+    
+    }

@@ -1,10 +1,17 @@
-function stickyNav(){
+function navBoldText(event){
+    $('.js-nav-button').on('click', event => {
+        const currentPage = $(event.currentTarget);
+        const otherPage = $('.js-nav-button').not(currentPage);
+        const pressedBool = $(currentPage).attr('aria-pressed') === 'true';
 
+        otherPage.removeClass('js-pressed').attr('aria-pressed', false);
+        currentPage.addClass('js-pressed').attr('aria-pressed', false);
+    });
 };
 
 function renderProjects(){
     $('main').html(`
-    <h2>Projects </h2>
+    <h2>Projects</h2>
       <div class ="projArea">
         <h3>Nintendo Trivia App</h3>
         <img src="images/quiz-app-crop1.png" alt="Screenshot of Nintendo Quiz" class="screenshot">
@@ -20,7 +27,7 @@ function renderProjects(){
 
 function renderAbout(){
     $('main').html(`
-    <h2>Bio </h2>
+    <h2>Bio</h2>
       <p>
           Ever since I was a kid in middle school, I've been tinkering with everything computer related I could get my hands on.
           Building my own PC's, modding games, 2D & 3D digital art, and of course programming to tie it all together. 
@@ -44,6 +51,7 @@ function renderHome(){
 
 function handlePage(){
     renderHome();
+    navBoldText();
     $(".navButtons").on('click', '.projects-button', function(event){
         renderProjects();
     });
