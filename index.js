@@ -12,11 +12,11 @@ function navBoldText(event){
 
 function renderProjects(){
     $('main').html(`
-    <h2>Projects </h2>
+    <h2>Projects</h2>
       <div class ="projArea">
         <h3>Nintendo Trivia App</h3>
-        <i class="fab fa-html5 "></i>
-        <i class="fab fa-js "></i>
+        <span class="fab fa-html5 "></span>
+        <span class="fab fa-js "></span>
         <img src="images/quiz-app-crop1.png" alt="Screenshot of Nintendo Quiz" class="screenshot">
         <p class="projBlerb">
             A 10 question quiz web application, using jQuery, CSS, HTML.
@@ -53,7 +53,7 @@ function renderHome(){
 };
 
 function handlePage(){
-    
+    //renderProjects();
     renderHome();
     navBoldText();
     $(".navButtons").on('click', '.projects-button', function(event){
