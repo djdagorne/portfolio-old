@@ -1,5 +1,6 @@
 function navBoldText(event){
     $('.js-nav-button').on('click', event => {
+        event.preventDefault();
         const currentPage = $(event.currentTarget);
         const otherPage = $('.js-nav-button').not(currentPage);
         const pressedBool = $(currentPage).attr('aria-pressed') === 'true';

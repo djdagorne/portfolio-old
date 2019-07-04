@@ -53,6 +53,11 @@ footer {
     padding-inline-start: 0px;
 }
 
+ul a{
+    color:black;
+    text-decoration: none;
+}
+
 .navButtons > li:before{
     cursor:pointer;
     text-decoration:none;
