@@ -76,8 +76,8 @@ footer {
     content: "";
     display: block;
     height: 1px;
-    right: 50%;
     position: absolute;
+    right: 50%;
     background: black;
     transition: 0.7s ease 0s, 0.3s ease 0s;
     width: 0;
@@ -187,7 +187,7 @@ footer{
     .projArea{
         display: border-box;
         position:relative;
-        width:75%;
+        width:65%;
         background:#d6d4d4;
         margin-left:auto;
         margin-right:auto;
@@ -199,6 +199,7 @@ footer{
     }
     p{
         text-align: justify;
+        width:60%;
     }
     .screenshot{
         width:100%;
