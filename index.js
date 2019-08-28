@@ -24,6 +24,17 @@ function renderProjects(){
         <span class="project-link"><a href="https://djdagorne.github.io/quiz-app/">Live</a></span>
         <span class="project-link"><a href="https://github.com/djdagorne/quiz-app">Repo</a></span>
       </div>
+      <div class ="projArea">
+        <h3>Concertfinder</h3>
+        <span class="fab fa-html5 "></span>
+        <span class="fab fa-js "></span>
+        <img src="images/search-screen.png" alt="Screenshot of Concertfinder App" class="screenshot">
+        <p class="projBlerb">
+            A concert lookup web application, using multiple API's, jQuery, CSS, HTML.
+        </p>
+        <span class="project-link"><a href="https://djdagorne.github.io/concert-finder/">Live</a></span>
+        <span class="project-link"><a href="https://github.com/djdagorne/concert-finder">Repo</a></span>
+      </div>
       `);
       
 };
