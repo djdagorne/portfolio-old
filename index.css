@@ -194,11 +194,11 @@ span a{
 
 
 
-.contact{
+footer a{
     display:inline-block;
 }
 
-.contact a, a:visited, a:hover{
+footer a, footer a:visited,footer a:hover{
     color: black;
 }
 
