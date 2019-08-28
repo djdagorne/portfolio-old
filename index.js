@@ -28,7 +28,7 @@ function renderProjects(){
         <h3>Concertfinder</h3>
         <span class="fab fa-html5 "></span>
         <span class="fab fa-js "></span>
-        <img src="images/search-screen.png" alt="Screenshot of Concertfinder App" class="screenshot">
+        <img src="images/search-screen.PNG" alt="Screenshot of Concertfinder App" class="screenshot">
         <p class="projBlerb">
             A concert lookup web application, using multiple API's, jQuery, CSS, HTML.
         </p>
