@@ -32,8 +32,8 @@ function renderProjects(){
         <p class="projBlerb">
             A concert lookup web application, using multiple API's, jQuery, CSS, HTML.
         </p>
-        <span class="project-link"><a href="https://djdagorne.github.io/concert-finder/">Live</a></span>
-        <span class="project-link"><a href="https://github.com/djdagorne/concert-finder">Repo</a></span>
+        <span class="project-link"><a href="https://djdagorne.github.io/concertfinder/">Live</a></span>
+        <span class="project-link"><a href="https://github.com/djdagorne/concertfinder">Repo</a></span>
       </div>
       `);
       
