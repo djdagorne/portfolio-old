@@ -14,28 +14,6 @@ function renderProjects(){
     $('main').html(`
         <h2>Projects</h2>
         <div class ="projArea">
-            <h3>Nintendo Trivia App</h3>
-            <span class="fab fa-html5 "></span>
-            <span class="fab fa-js "></span>
-            <img src="images/quiz-app-crop1.png" alt="Screenshot of Nintendo Quiz" class="screenshot">
-            <p class="projBlerb">
-                A 10 question quiz web application, using jQuery, CSS, HTML.
-            </p>
-            <span class="project-link"><a href="https://djdagorne.github.io/quiz-app/">Live</a></span>
-            <span class="project-link"><a href="https://github.com/djdagorne/quiz-app">Repo</a></span>
-        </div>
-        <div class ="projArea">
-            <h3>Concertfinder</h3>
-            <span class="fab fa-html5 "></span>
-            <span class="fab fa-js "></span>
-            <img src="images/search-screen.PNG" alt="Screenshot of Concertfinder App" class="screenshot">
-            <p class="projBlerb">
-                A concert lookup web application, using multiple API's, jQuery, CSS, HTML.
-            </p>
-            <span class="project-link"><a href="https://djdagorne.github.io/concertfinder/">Live</a></span>
-            <span class="project-link"><a href="https://github.com/djdagorne/concertfinder">Repo</a></span>
-        </div>
-        <div class ="projArea">
             <h3>Tennit</h3>
             <span class="fab fa-html5 "></span>
             <span class="fab fa-css3-alt"></span>
@@ -55,6 +33,28 @@ function renderProjects(){
             <span class="project-link"><a href="https://tennit.djdagorne.now.sh/">Live</a></span>
             <span class="project-link"><a href="https://github.com/djdagorne/tennit-client">Client Repo</a></span>
             <span class="project-link"><a href="https://github.com/djdagorne/tennit-server">Server Repo</a></span>
+        </div>
+        <div class ="projArea">
+            <h3>Concertfinder</h3>
+            <span class="fab fa-html5 "></span>
+            <span class="fab fa-js "></span>
+            <img src="images/search-screen.PNG" alt="Screenshot of Concertfinder App" class="screenshot">
+            <p class="projBlerb">
+                A concert lookup web application, using multiple API's, jQuery, CSS, HTML.
+            </p>
+            <span class="project-link"><a href="https://djdagorne.github.io/concertfinder/">Live</a></span>
+            <span class="project-link"><a href="https://github.com/djdagorne/concertfinder">Repo</a></span>
+        </div>
+        <div class ="projArea">
+            <h3>Nintendo Trivia App</h3>
+            <span class="fab fa-html5 "></span>
+            <span class="fab fa-js "></span>
+            <img src="images/quiz-app-crop1.png" alt="Screenshot of Nintendo Quiz" class="screenshot">
+            <p class="projBlerb">
+                A 10 question quiz web application, using jQuery, CSS, HTML.
+            </p>
+            <span class="project-link"><a href="https://djdagorne.github.io/quiz-app/">Live</a></span>
+            <span class="project-link"><a href="https://github.com/djdagorne/quiz-app">Repo</a></span>
         </div>
       `);
       
