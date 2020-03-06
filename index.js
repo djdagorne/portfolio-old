@@ -41,6 +41,10 @@ function renderProjects(){
             <span class="fab fa-css3-alt"></span>
             <span class="fab fa-js "></span>
             <span class="fab fa-react"></span>
+            <span class="fas fa-database"></span>
+            <span class="fas fa-server"></span>
+
+
             <img src="images/Capture1.PNG" alt="Screenshot of Tennit React Client" class="screenshot">
             <p class="projBlerb">
                 A satirical dating app above moving in with people to save on rent. 

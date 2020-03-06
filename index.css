@@ -34,7 +34,7 @@ main{
     padding:0;
     margin:0;
 }
-                                                 /* contact info at bottom of page */
+/* contact info at bottom of page */
 body::after {
     content: '';
     display: block;
@@ -168,27 +168,12 @@ span a{
 }
 
 /* font-awesome icons */
-.fab{
+.fab, .fa-database, .fa-server{
     opacity:0.5;
     position: relative;
     z-index: 2;
     margin-bottom: 5px;
-}
-
-.fa-html5{
     margin-left:8px;
-}
-
-.fa-js{
-    margin-left: 8px;
-}
-
-.fa-css3-alt{
-    margin-left: 8px;
-}
-
-.fa-react{
-    margin-left: 8px;
 }
 
 .first-line{
@@ -203,8 +188,8 @@ footer a, footer a:visited,footer a:hover{
     color: black;
 }
 
-
-::-webkit-scrollbar {                                     /*  thinner scroll bar */
+/*  thinner scroll bar */
+::-webkit-scrollbar {                                     
     width: 9px;
 }
 
@@ -221,8 +206,8 @@ footer a, footer a:visited,footer a:hover{
     background: #555; 
     border-radius:4px;
 }
-
- @media all and (min-width: 700px) {                                           /*  desktop stuff */
+/*  desktop stuff */
+@media all and (min-width: 700px) {                                           
     h1{
         font-size:40px;
     }
@@ -247,4 +232,4 @@ footer a, footer a:visited,footer a:hover{
         width:100%;
     }
     
-    }
+}
