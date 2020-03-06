@@ -96,7 +96,7 @@ ul a{
 .js-pressed{    
     font-weight:1000;
 }
-                                                            /* text sizes */
+/* text sizes */
 h1{
     font-size:30px;
     margin-top:15px;
@@ -118,10 +118,9 @@ h3{
 
 h4{
     position: relative;
-    font-size:22px;
-    margin-top: 50px;
+    font-size: 15px;
     margin: auto;
-    padding:10px;
+    margin-bottom: 10px;
 }
 
 p{
@@ -135,7 +134,7 @@ p{
     font-weight:300;
 }
 
-                                                /* project display */
+ /* project display */
 .projBlerb{
     text-align:center;
     margin:auto;
@@ -168,31 +167,33 @@ span a{
     border-bottom: 1px solid #b9aeae;
 }
 
- .fab, .fas{                                /* font-awesome icons */
-    
+/* font-awesome icons */
+.fab{
+    opacity:0.5;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 5px;
 }
 
 .fa-html5{
-    opacity:0.5;
-    position: absolute;
-    margin-left:5px;
-    margin-top:5px;
-    z-index: 2;
+    margin-left:8px;
 }
 
 .fa-js{
-    opacity:0.5;
-    position: absolute;
-    margin-left: 25px;
-    margin-top:5px;
-    z-index: 2;
+    margin-left: 8px;
+}
+
+.fa-css3-alt{
+    margin-left: 8px;
+}
+
+.fa-react{
+    margin-left: 8px;
 }
 
 .first-line{
     text-align:center;
 }
-
-
 
 footer a{
     display:inline-block;
