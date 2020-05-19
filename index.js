@@ -26,9 +26,9 @@ function renderProjects(){
             <img src="images/Capture1.PNG" alt="Screenshot of Tennit React Client" class="screenshot">
             <p class="projBlerb">
                 A satirical dating app above moving in with people to save on rent. 
-                Full stack React app, Express Server and postgreSQL database all made from scratch by myself.
+                Full stack React app made with vanilla CSS, Express Server and postgreSQL database.
                 Included is functional messaging, matching, searching, logging in with expiring web tokens, password hashing
-                and a weird sense of humor.
+                and a weird sense of humor. Give Heroku's Hobby Dev backend a moment to log you in, thanks :)
             </p>
             <span class="project-link"><a href="https://tennit.djdagorne.now.sh/">Live</a></span>
             <span class="project-link"><a href="https://github.com/djdagorne/tennit-client">Client Repo</a></span>
@@ -40,7 +40,7 @@ function renderProjects(){
             <span class="fab fa-js "></span>
             <img src="images/search-screen.PNG" alt="Screenshot of Concertfinder App" class="screenshot">
             <p class="projBlerb">
-                A concert lookup web application, using multiple API's, jQuery, CSS, HTML.
+                A concert lookup web application, using last.fm Tastemaker and Ticketmasters Eventfinder API's, jQuery, vanilla CSS, HTML.
             </p>
             <span class="project-link"><a href="https://djdagorne.github.io/concertfinder/">Live</a></span>
             <span class="project-link"><a href="https://github.com/djdagorne/concertfinder">Repo</a></span>
@@ -75,9 +75,9 @@ function renderAbout(){
 
 function renderHome(){
     $('main').html(`
-        <h2>Well hello!</h2>
+        <h2>Hello!</h2>
         <p>
-            I am Dexter Dagorne. I like Dota, low quality memes, 
+            My name is Dexter Dagorne. I like playing DND, low quality memes, 
             and making computers do my bidding. Feel free to check out 
             some of those biddings!
         </p>
