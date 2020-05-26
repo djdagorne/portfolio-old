@@ -42,7 +42,7 @@ function renderProjects(){
             <span class="fab fa-js "></span>
             <span class="fab fa-react"></span>
 
-            <img src="images/reactris.png" alt="Screenshot of Reactris game" class="screenshot">
+            <img src="images/" alt="Screenshot of Reactris game" class="screenshot">
             <p class="projBlerb">
                 A simple exploration of React Hooks, useEffect, CSS Grids, and making an interactive web app. Uses Dan Abramov's
                 custom useInterval hook to manipulate setInterval, dynamically changing game speed with score/levels just like real tetris.
