@@ -13,6 +13,7 @@ function navBoldText(event){
 function renderProjects(){
     $('main').html(`
         <h2>Projects</h2>
+
         <div class ="projArea">
             <h3>Tennit</h3>
             <span class="fab fa-html5 "></span>
@@ -21,7 +22,6 @@ function renderProjects(){
             <span class="fab fa-react"></span>
             <span class="fas fa-database"></span>
             <span class="fas fa-server"></span>
-
 
             <img src="images/Capture1.PNG" alt="Screenshot of Tennit React Client" class="screenshot">
             <p class="projBlerb">
@@ -34,6 +34,24 @@ function renderProjects(){
             <span class="project-link"><a href="https://github.com/djdagorne/tennit-client">Client Repo</a></span>
             <span class="project-link"><a href="https://github.com/djdagorne/tennit-server">Server Repo</a></span>
         </div>
+        
+        <div class ="projArea">
+            <h3>Reactris</h3>
+            <span class="fab fa-html5 "></span>
+            <span class="fab fa-css3-alt"></span>
+            <span class="fab fa-js "></span>
+            <span class="fab fa-react"></span>
+
+            <img src="images/reactris.PNG" alt="Screenshot of Reactris game" class="screenshot">
+            <p class="projBlerb">
+                A simple exploration of React Hooks, useEffect, CSS Grids, and making an interactive web app. Uses Dan Abramov's
+                custom useInterval hook to manipulate setInterval, dynamically changing game speed with score/levels just like real tetris.
+                Uses the keyboards arrow keys, left/right to move tetromino side to side, up to rotate, down to speed up drop.
+            </p>
+            <span class="project-link"><a href="https://react-tetris-sand.now.sh/">Live</a></span>
+            <span class="project-link"><a href="https://github.com/djdagorne/react-tetris">Repo</a></span>
+        </div>
+
         <div class ="projArea">
             <h3>Concertfinder</h3>
             <span class="fab fa-html5 "></span>
@@ -45,6 +63,7 @@ function renderProjects(){
             <span class="project-link"><a href="https://djdagorne.github.io/concertfinder/">Live</a></span>
             <span class="project-link"><a href="https://github.com/djdagorne/concertfinder">Repo</a></span>
         </div>
+
         <div class ="projArea">
             <h3>Nintendo Trivia App</h3>
             <span class="fab fa-html5 "></span>
